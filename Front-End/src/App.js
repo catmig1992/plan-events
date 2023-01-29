@@ -1,10 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+      <nav>
+                    <ul>
+                        <li>
+                            <a className="Nav-text" href="/">Home</a>
+                        </li>
+                        <li>
+                        <a className="Nav-text" href="/services">Services</a>
+                        </li>
+                        <li>
+                        <a className="Nav-text"href="/gallery">Gallery</a>
+                        </li>
+                        <li><a href="">
+        <button className="button">Build Your Own Event</button>
+    </a></li>
+                    </ul>
+                    </nav>
       <h1 className="title">SPARKLY EVENT PLANNER</h1>
     <div>
       <img className="main-image"  src="/image/event_table.jpeg" alt="balloons"/>
