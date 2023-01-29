@@ -1,3 +1,17 @@
+This App will allow clients to plan their events on an existing event space. Our App will have a database of vendors to plan your event with. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
