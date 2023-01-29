@@ -7,6 +7,87 @@
   pointer-events: none;
 }
 
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+nav {
+  background-color: rgb(73, 10, 93);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+body{
+  background-image: url("image/balloons_opacity.png");
+}
+
+
+.button{
+  margin-right: 800 px;
+  background-color: rgb(22, 228, 255);
+  border-radius: 10px;
+  border-color: none;
+  padding: 20px;
+}
+
+button:focus { outline: none; }
+
+.About{
+  text-align: center;
+}
+
+.main-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Nav-text{
+  font-size: 100px;
+}
+
+.title{
+ padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
