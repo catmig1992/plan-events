@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-import Gallery from './components/gallery'
+import Gallery from './Components/Gallery'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
               <a className="Nav-text" href="/services">Services</a>
               </li>
               <li>
-                <a className="Nav-text"href="./components/gallery">Gallery</a>
+                <a className="Nav-text"href="./Components/Gallery">Gallery</a>
                 </li>
                 <li><a href="">
         <button className="button">Build Your Own Event</button>
@@ -40,7 +40,7 @@ function App() {
       </div>
 
       <div className="display">
-      <Route path="./components/gallery" component={Gallery} />
+      <Route path="./Components/Gallery" component={Gallery} />
 
         </div>
       </Router>
