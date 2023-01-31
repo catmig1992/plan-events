@@ -33,9 +33,21 @@ app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
-// Breads
+// breads  --- in our case - event index
 const eventsController = require("./controllers/events_controller.js");
 app.use("/events", eventsController);
+
+
+
+
+
+
+
+
+// 404 Page
+app.get('*', (req, res) => {
+  res.send('404')
+});
 
 // LISTEN
 app.listen(PORT, () => {
