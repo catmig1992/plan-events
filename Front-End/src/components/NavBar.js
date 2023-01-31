@@ -21,7 +21,7 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a className="Nav-text" href="/gallery">
+              <a className="Nav-text" href="/Gallery">
                 Gallery
               </a>
             </li>
