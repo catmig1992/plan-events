@@ -3,6 +3,19 @@ const express = require("express");
 const app = express();
 const methodOverride = require("method-override");
 
+
+//testing with mongodb
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}
+  ).catch((e) => {
+    console.log("error connecting to mongoose!",e);
+  });
+  mongoose.connection.on("error", (e) => {
+    console.log("mongo connect error!");
+  });
+  mongoose.connection.on("connected", () => {
+    console.log("connected to mongo");
+  });
+
 // CONFIGURATION
 require("dotenv").config();
 const PORT = process.env.PORT;
