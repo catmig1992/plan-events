@@ -43,4 +43,4 @@ catering.delete('/:id', (req, res) => {
 
 
 // export
-module.exports = catering
+module.exports = florals

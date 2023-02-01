@@ -51,24 +51,9 @@ function Index({ clientInfo, florals,furniture,music, title }) {
         })}
       </ul>
 
-
-      {/* <h3>Breads</h3> */}
-      <div className="newButton">
-        <a href="/breads/new">
-          <button>Add a new bread</button>
-        </a>
-      </div>
-      <ul>
-        {breads.map((bread, index) => {
-          return (
-            <li key={index}>
-              <a href={`/breads/${bread.id}`}>{bread.name}</a>
-            </li>
-          );
-        })}
-      </ul>
-    </Default>
+      </Default>
   );
 }
+      
 
 module.exports = Index;

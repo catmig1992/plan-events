@@ -1,4 +1,5 @@
 // DEPENDENCIES
+require ( 'dotenv' ).config ( )
 const express = require('express');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
@@ -10,6 +11,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const PORT = process.env.PORT;
 const app = express();
+console.log('this is my port',PORT);
 
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}
   ).catch((e) => {
@@ -38,8 +40,8 @@ app.get("/", (req, res) => {
 });
 
 // breads  --- in our case - event index
-const eventsController = require("./controllers/events_controller.js");
-app.use("/events", eventsController);
+// const eventsController = require("./controllers/events_controller.js");
+// app.use("/events", eventsController);
 
 
 
@@ -55,7 +57,8 @@ app.get('*', (req, res) => {
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`connected on port: ${PORT}`);
+  console.log('listening on port', PORT);
 });
 
-//module.exports = app;
+
+module.exports = app;
