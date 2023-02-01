@@ -7,8 +7,6 @@ import Row from "react-bootstrap/Row";
 import "../App.css";
 import "react-calendar/dist/Calendar.css";
 
-//Add Flower Arrangement/Style Form Fields
-
 export default function CustomForm() {
   const [date, setDate] = useState(new Date());
   return (

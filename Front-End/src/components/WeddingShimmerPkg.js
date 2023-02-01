@@ -57,7 +57,7 @@ function WeddingShimmerPkg() {
               <span className="PresetCategory">Music:</span> Live Band
             </p>
             <p>
-              <span className="PresetCategory">Entertainment:</span> Photobooth
+              <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
           </main>
           <footer>
