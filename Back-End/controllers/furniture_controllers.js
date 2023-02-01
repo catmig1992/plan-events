@@ -1,47 +1,45 @@
-const express = require("express");
-const events = express.Router();
-const Event = require("../models/event.js");
+// dependencies
+const express = require('express')
+const furniture = express.Router()
+const Furniture = require('../models/furniture.js')
+const furnitureSeedData = require('../models/furniture_seed.js')
 
-// INDEX
-events.get("/", (req, res) => {
-  // res.render("../Front-End/views/index");
-  res.send(Event);
-});
+furniture.get('/data/seed', (req, res) => {
+    Furniture.insertMany(furnitureSeedData)
+        .then(res.redirect('/breads'))
+})
 
-// NEW
-events.get("/new", (req, res) => {
-  res.redirect("/events");
-  //template
-});
+// Index: 
+furniture.get('/', (req, res) => {
+    Furniture.find()
+        .populate('furniture')
+        .then(foundFurniture => {
+            res.send(foundFurniture)
+        })
+})  
 
-// EDIT
-events.get("/:id/edit", (req, res) => {
-  res.redirect("/events");
-  //template
-});
+// Show: 
+furniture.get('/:id', (req, res) => {
+    Furniture.findById(req.params.id)
+        .populate('furniture')
+        .then(foundFurniture => {
+            res.render('furnitureShow', {
+                baker: foundFurniture
+            })
+        })
+})
 
-// SHOW
-events.get("/:id", (req, res) => {
-  res.redirect("/events");
-  //template
-});
+// delete
+baker.delete('/:id', (req, res) => {
+    Baker.findByIdAndDelete(req.params.id) 
+      .then(deletedBaker => { 
+        res.status(303).redirect('/breads')
+      })
+})
 
-// CREATE
-events.post("/", (req, res) => {
-  res.redirect("/events");
-  //template
-});
 
-// UPDATE
-events.put("/:id", (req, res) => {
-  res.redirect("/events");
-  //template
-});
 
-// DELETE
-events.delete("/:id", (req, res) => {
-  res.status(303);
-  //template
-});
 
-module.exports = events;
+
+// export
+module.exports = furniture       
