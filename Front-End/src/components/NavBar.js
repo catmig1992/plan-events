@@ -6,6 +6,14 @@ import Gallery from "./Gallery";
 import EventPackages from "./EventPackages";
 import CustomForm from "./CustomForm";
 import PackageForm from "./PackageForm";
+import CelebrationAnniversaryPkg from "./CelebAnniversaryPkg";
+import CelebrationBirthdayPkg from "./CelebBirthdayPkg";
+import CelebrationGraduationPkg from "./CelebGradPkg";
+import CelebrationHolidayPkg from "./CelebHolidayPkg";
+import CelebrationReunionPkg from "./CelebReunionPkg";
+import CorporateClassicPkg from "./CorpClassicPkg";
+import CorporateHolidayPkg from "./CorpHolidayPkg";
+import CorporateMixerPkg from "./CorpMixerPkg";
 import WeddingBudgetPkg from "./WeddingBgtPkg";
 import WeddingGlamPkg from "./WeddingGlamPkg";
 import WeddingShimmerPkg from "./WeddingShimmerPkg";
@@ -55,6 +63,15 @@ export default function NavBar() {
           {/* <Route path="/services" component={Services} /> */}
           <Route path="/packages" render={() => <Gallery />} />
           <Route path="/eventPackages" render={() => <EventPackages />} />
+          <Route path="/anniversary" component={CelebrationAnniversaryPkg} />
+          <Route path="/birthday" component={CelebrationBirthdayPkg} />
+          <Route path="/graduation" component={CelebrationGraduationPkg} />
+          <Route path="/holiday" component={CelebrationHolidayPkg} />
+          <Route path="/reunion" component={CelebrationReunionPkg} />
+          <Route path="/classic" component={CorporateClassicPkg} />
+          <Route path="/corp-holiday" component={CorporateHolidayPkg} />
+          <Route path="/mixer" component={CorporateMixerPkg} />
+          <Route path="/form" component={CustomForm} />
           <Route path="/budget" component={WeddingBudgetPkg} />
           <Route path="/glam" component={WeddingGlamPkg} />
           <Route path="/shimmer" component={WeddingShimmerPkg} />

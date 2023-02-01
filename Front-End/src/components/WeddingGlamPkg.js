@@ -58,7 +58,7 @@ function WeddingGlamPkg() {
               <span className="PresetCategory">Music:</span> Solo Artist
             </p>
             <p>
-              <span className="PresetCategory">Entertainment:</span> Photobooth
+              <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
           </main>
           <footer>
