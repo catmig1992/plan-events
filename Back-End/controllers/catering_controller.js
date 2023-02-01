@@ -1,7 +1,7 @@
 // dependencies
 const express = require('express')
 const catering = express.Router()
-const catering = require('../models/.js')
+const Catering = require('../models/.js')
 const cateringSeedData = require('../models/catering_seed.js')
 
 
@@ -15,7 +15,7 @@ catering.get('/', (req, res) => {
     catering.find()
         .populate('catering')
         .then(foundcaterings => {
-            res.send(foundcaterings)
+            res.send(foundCatering)
         })
 })  
 
@@ -23,18 +23,18 @@ catering.get('/', (req, res) => {
 catering.get('/:id', (req, res) => {
     catering.findById(req.params.id)
         .populate('catering')
-        .then(foundcatering => {
+        .then(foundCatering => {
             res.render('cateringShow', {
-                catering: foundcatering
+                catering: foundCatering
             })
         })
 })
 
 // delete
 catering.delete('/:id', (req, res) => {
-    catering.findByIdAndDelete(req.params.id) 
+    Catering.findByIdAndDelete(req.params.id) 
       .then(deletedcatering => { 
-        res.status(303).redirect('/event')
+        res.status(303).redirect('/ca')
       })
 })
 
@@ -43,4 +43,4 @@ catering.delete('/:id', (req, res) => {
 
 
 // export
-module.exports = Index                 
+module.exports = catering

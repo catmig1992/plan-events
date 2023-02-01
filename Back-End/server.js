@@ -1,10 +1,18 @@
 // DEPENDENCIES
-const express = require("express");
+require ( 'dotenv' ).config ( )
+const express = require('express');
+const methodOverride = require('method-override');
+const mongoose = require('mongoose');
+
+
+
+
+// CONFIGURATION
+require('dotenv').config();
+const PORT = process.env.PORT;
 const app = express();
-const methodOverride = require("method-override");
+console.log('this is my port',PORT);
 
-
-//testing with mongodb
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}
   ).catch((e) => {
     console.log("error connecting to mongoose!",e);
@@ -15,18 +23,16 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
   mongoose.connection.on("connected", () => {
     console.log("connected to mongo");
   });
-
-// CONFIGURATION
-require("dotenv").config();
-const PORT = process.env.PORT;
+  
 
 // MIDDLEWARE
-app.set("views", __dirname + "/views");
-app.set("view engine", "jsx");
-app.engine("jsx", require("express-react-views").createEngine());
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride("_method"));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
+app.use(express.static('public'));
+app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended: true}));
+
 
 // ROUTES
 app.get("/", (req, res) => {
@@ -34,8 +40,8 @@ app.get("/", (req, res) => {
 });
 
 // breads  --- in our case - event index
-const eventsController = require("./controllers/events_controller.js");
-app.use("/events", eventsController);
+// const eventsController = require("./controllers/events_controller.js");
+// app.use("/events", eventsController);
 
 
 
@@ -51,7 +57,8 @@ app.get('*', (req, res) => {
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`connected on port: ${PORT}`);
+  console.log('listening on port', PORT);
 });
+
 
 module.exports = app;
