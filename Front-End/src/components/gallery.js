@@ -1,21 +1,27 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+import SimpleImageSlider from "react-simple-image-slider";
 
-export default function Gallery() {
+const images = [
+  { url: "image/wedding.jpeg" },
+  { url: "image/party_people.jpeg" },
+  { url: "image/party_people2.jpeg" },
+  { url: "image/newyear_celebration.jpeg" },
+  { url: "image/kid_birthday.jpeg" },
+  { url: "image/birthday.jpeg" }
+];
+
+const Gallery = () => {
   return (
-    <Container>
-<div id="myDIV">
-  <div class="image"><img className="image" src="/image/wedding.jpeg" alt="wedding"/></div>
-  <div class="image"><img className="image" src="/image/party_people.jpeg" alt="party people"/></div>
-  <div class="image"><img className="image" src="/image/party_people2.jpeg" alt="party people 2"/></div>
-  </div>
-
-  <div id="myDIV">
-  <div class="image"><img className="image" src="/image/newyear_celebration.jpeg" alt="new year celebration"/></div>
-  <div class="image"><img className="image" src="/image/corporate_party.jpeg" alt="corporate party"/></div>
-  <div class="image"><img className="image" src="/image/birthday.jpeg" alt="birthday"/></div>
-</div>
-</Container>
-
+    <div Class="imagegallery">
+      <SimpleImageSlider
+        width={1000}
+        height={600}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+    </div>
   );
 }
+
+export default Gallery;
