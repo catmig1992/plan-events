@@ -8,6 +8,7 @@ function App() {
     /////Homepage Information///////
     <div className="App">
 
+
       <NavBar />
       <h1 className="title">SPARKLY EVENT PLANNER</h1>
       <div>
@@ -34,6 +35,13 @@ function App() {
         </div>
       </div>
 
+=======
+      <header>
+      <h1 className="title">SPARKLY EVENT PLANNER</h1>
+      </header>
+      <NavBar />
+      
+      
     </div>
   );
 }
