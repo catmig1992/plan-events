@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
 import "../App.css";
 import Gallery from "./Gallery";
+import About from "./About";
 
 
 import EventPackages from "./EventPackages";
@@ -33,7 +34,12 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a className="Nav-text" href="/services">
+              <a className="Nav-text" href="/About">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="Nav-text" href="/Services">
                 Services
               </a>
             </li>
@@ -80,6 +86,7 @@ export default function NavBar() {
           <Route path="/packageForm" render={() => <PackageForm />} />
           <Route path="/customForm" render={() => <CustomForm />} />
           <Route path="/gallery" render={() => <Gallery />} />
+          <Route path="/About" render={() => <About />} />
         </div>
       </Router>
     </div>
