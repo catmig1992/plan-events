@@ -9,7 +9,7 @@ const clientInfoSchema = new Schema(
       name: {
         type: String,
         required: true,
-        enum: ["Gjusta", "Salt & Honey Catering", "The Taco Man", "Culinary Eye", "Angelini"],
+        enum: ["Robles", "Knisely", "Tang", "Marcus", "Amar"],
       },
       food_type: {
         type: String,

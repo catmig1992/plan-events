@@ -6,13 +6,13 @@ const musicSeedData = require('../models/music_seed.js')
 
 
 music.get('/data/seed', (req, res) => {
-    music.insertMany(musicSeedData)
+    Music.insertMany(musicSeedData)
         .then(res.redirect('/event'))
 })
 
 // Index: 
 musicg.get('/', (req, res) => {
-    music.find()
+    Music.find()
         .populate('music')
         .then(foundMusic => {
             res.send(foundMusic)
@@ -21,7 +21,7 @@ musicg.get('/', (req, res) => {
 
 // Show: 
 music.get('/:id', (req, res) => {
-   music.findById(req.params.id)
+   Music.findById(req.params.id)
         .populate('music')
         .then(foundMusic => {
             res.render('musicShow', {
@@ -31,8 +31,8 @@ music.get('/:id', (req, res) => {
 })
 
 // delete
-catering.delete('/:id', (req, res) => {
-    Catering.findByIdAndDelete(req.params.id) 
+music.delete('/:id', (req, res) => {
+   Music.findByIdAndDelete(req.params.id) 
       .then(deletedMusic => { 
         res.status(303).redirect('/')
       })

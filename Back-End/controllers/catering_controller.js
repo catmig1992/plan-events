@@ -1,7 +1,7 @@
 // dependencies
 const express = require('express')
 const catering = express.Router()
-const Catering = require('../models/.js')
+const Catering = require('../models/catering.js')
 const cateringSeedData = require('../models/catering_seed.js')
 
 

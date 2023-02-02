@@ -9,7 +9,7 @@ const musicSchema = new Schema(
       name: {
         type: String,
         required: true,
-        enum: ["classical", "Kustom Sounds", "Mariachi Tesoro", "Miss MuMu LaRue", "GSPEL CHOIR LOS ANGELES"],
+        enum: ["classical", "Kustom Sounds", "Mariachi Tesoro", "Miss MuMu LaRue", "GOSPEL CHOIR LOS ANGELES"],
       },
       type: {
         type: String,
