@@ -97,11 +97,7 @@ florals.post('/', (req, res) => {
   if (!req.body.image) {
     req.body.image = undefined;
   }
-  if (req.body.hasGluten === 'on') {
-    req.body.hasGluten = true;
-  } else {
-    req.body.hasGluten = false;
-  }
+  
   Florals.create(req.body);
   res.redirect('/florals');
 });
