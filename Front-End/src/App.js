@@ -11,14 +11,12 @@ function App() {
     <div className="App">
       <header>
       <h1 className="title">SPARKLY EVENT PLANNER</h1>
+      <NavBar />
+  
+  
       </header>
- <NavBar />
- 
-      <img
-          
-          src="/image/border_decor.png"
-          alt="balloons" width="2000px" height="700px"
-        />
+
+
 
     </div>
   );

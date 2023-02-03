@@ -424,9 +424,6 @@ export default function CustomForm() {
           </div>
         </Form>
       </main>
-      <footer>
-        <p>Plan with us!</p>
-      </footer>
     </div>
   );
 }

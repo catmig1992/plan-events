@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 
-  background-color: rgb(173, 197, 246);
+
+}
+
+.body{
+  background: url('http://localhost:3000/image/background.png');
+  background-size: 1800px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+
+}
+.blank_block{
+  opacity: 0%;
 }
 
 .App-header {
@@ -14,6 +26,7 @@
   font-size: 40px;
   color: white;
 }
+
 
 h1 {
   text-align: center;
@@ -51,7 +64,17 @@ a:link {
 nav a:hover {
 
   color: rgb(118, 255, 175);
+
+  
+  font-size: 30px;
+  text-shadow: #222;
 }
+
+
+
+
+
+
 
 main {
   margin-right: 20px;
@@ -79,11 +102,15 @@ button:focus { outline: none; }
   text-align: center;
   font-size: 30px;
   padding-top:40px;
+  padding-bottom:500px;
   background-color:#8daade;
+
+  margin:80px;
+ 
 }
 
-#background_About {
-  background-color: antiquewhite;
+.About_text {
+  opacity:100%;
 }
 
 .main-image {
@@ -164,12 +191,13 @@ button:focus { outline: none; }
 }
 
 .packages-header {
-  background-color: #b0b0ae;
+  background-color:#8daade;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin:100px;
 }
 
 .package-list {
