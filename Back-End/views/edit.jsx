@@ -46,3 +46,6 @@ function Edit ({bread, bakers}) {
       </Default>
     )
 }
+
+
+module.exports = Edit

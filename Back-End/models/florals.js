@@ -39,6 +39,7 @@
 //   const Florals = mongoose.model('Furniture', furnitureSchema);
 //   module.exports = Florals;
 
+
 // require mongoose 
 const mongoose = require('mongoose')
 // creating shorthand for the Schema constructor 
