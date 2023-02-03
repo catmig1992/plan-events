@@ -85,9 +85,6 @@ export default function CelebrationGraduationPkg() {
               </Button>
             </div>
           </main>
-          <footer>
-            <p>Plan with us!</p>
-          </footer>
         </div>
       </div>
     </Container>

@@ -80,9 +80,6 @@ export default function EventPackages() {
           </Card>
         </CardGroup>
       </header>
-      <footer>
-        <p>Plan with us!</p>
-      </footer>
     </div>
   );
 }

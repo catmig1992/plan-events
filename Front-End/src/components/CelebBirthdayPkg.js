@@ -90,9 +90,6 @@ export default function CelebrationBirthdayPkg() {
               </Button>
             </div>
           </main>
-          <footer>
-            <p>Plan with us!</p>
-          </footer>
         </div>
       </div>
     </Container>

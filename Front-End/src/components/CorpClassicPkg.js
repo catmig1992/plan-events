@@ -87,9 +87,6 @@ export default function CorporateClassicPkg() {
               </Button>
             </div>
           </main>
-          <footer>
-            <p>Plan with us!</p>
-          </footer>
         </div>
       </div>
     </Container>

@@ -87,9 +87,6 @@ export default function CelebrationHolidayPkg() {
               </Button>
             </div>
           </main>
-          <footer>
-            <p>Plan with us!</p>
-          </footer>
         </div>
       </div>
     </Container>
