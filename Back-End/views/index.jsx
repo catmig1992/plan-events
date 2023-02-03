@@ -1,37 +1,27 @@
 const React = require('react')
-const Default = require('./layouts/Default')
+const Default = require('./Default')
 
-function Index({ catering, bakers, title }) {
+function Index({ florals, title }) {
   return (
     <Default title={title}>
-      <h2>Index Page</h2>
+      <h2>Vendor DataBase Page</h2>
       {/* <p>I have {breads[0].name} bread!</p> */}
       {/* This is a JSX comment. */}
-      <h3>Catering</h3>
+      <h3>Florals</h3>
+      <div className="newButton">
+        <a href="/florals/new">
+          <button>Add A New Flower</button>
+        </a>
+      </div>
       <ul>
-        {catering.map((catering) => {
+        {florals.map((florals, index) => {
           return (
-            <li key={catering.id}>
-              <a href={`/catering/${catering.id}`}>{catering.name}</a>
+            <li key={index}>
+              <a href={`/florals/${florals.id}`}>{florals.flower_type}</a>
             </li>
           );
         })}
       </ul>
-      {/* <h3>Breads</h3>
-      <div className="newButton">
-        <a href="/breads/new">
-          <button>Add a new bread</button>
-        </a>
-      </div>
-      <ul>
-        {breads.map((bread, index) => {
-          return (
-            <li key={index}>
-              <a href={`/breads/${bread.id}`}>{bread.name}</a>
-            </li>
-          );
-        })}
-      </ul> */}
     </Default>
   );
 }

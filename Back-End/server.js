@@ -40,8 +40,8 @@ app.get("/", (req, res) => {
 });
 
 //breads  --- in our case - event index
-const cateringController = require("./controllers/catering_controller.js");
-app.use("/events", cateringController);
+ const floralsController = require("./controllers/florals_controller.js");
+ app.use("/florals", floralsController);
 
  
 
