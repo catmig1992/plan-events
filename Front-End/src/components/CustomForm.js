@@ -14,7 +14,7 @@ export default function CustomForm() {
       <header className="form-header">
         <h1 className="form-title">Get the Party Started!</h1>
       </header>
-      <main>
+      <main className="form-detail">
         <Form>
           <Row className="mb-3">
             <Col>
@@ -383,9 +383,22 @@ export default function CustomForm() {
             </Form.Group>
           </Row>
 
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <div>
+            <Button
+              className="BackButton"
+              variant="secondary"
+              action
+              href="/eventPackages"
+            >
+              Back
+            </Button>
+          </div>
+          <br />
+          <div>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </div>
         </Form>
       </main>
       <footer>

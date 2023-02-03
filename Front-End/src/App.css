@@ -1,11 +1,10 @@
 .App {
   text-align: center;
-  background-color:rgb(173, 197, 246);
-  
+  background-color: rgb(173, 197, 246);
 }
 
 .App-header {
-  background-color:rgb(89, 70, 232);
+  background-color: rgb(89, 70, 232);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,55 +47,51 @@ a:link {
 }
 
 nav a:hover {
-  color: rgb(118, 255, 175);}
-
+  color: rgb(118, 255, 175);
+}
 
 main {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-
-
-
-.button{
+.button {
   margin-right: 800 px;
   background-color: rgb(22, 228, 255);
   border-radius: 10px;
   border-color: none;
   padding: 20px;
-  font-size: 30px
+  font-size: 30px;
 }
 
-button:focus { outline: none; }
+button:focus {
+  outline: none;
+}
 
-.About{
+.About {
   text-align: center;
   font-size: 30px;
 }
 
-#background_About{
-  background-color:antiquewhite;
+#background_About {
+  background-color: antiquewhite;
 }
 
-.main-image{
+.main-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.Nav-text{
+.Nav-text {
   font-size: 30px;
 }
 
-.title{
- padding-top: 40px;
- padding-bottom: 40px;
-
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
-
 
 .App-link {
   color: #61dafb;
@@ -147,6 +142,9 @@ button:focus { outline: none; }
   text-align: center;
 }
 
+.form-detail {
+  text-align: left;
+}
 /*********************************
 **********Calendar
 *********************************/
@@ -254,7 +252,6 @@ abbr[title] {
   margin: 2rem;
   border: solid;
   padding: 1rem;
-
 }
 
 .PresetContent {
@@ -267,8 +264,8 @@ abbr[title] {
 }
 
 .PresetMain {
-text-align: left;
-margin-left: 2rem;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .PresetInfo {
@@ -279,4 +276,3 @@ margin-left: 2rem;
 .PresetCategory {
   font-weight: bold;
 }
-
