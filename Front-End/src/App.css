@@ -1,8 +1,22 @@
 .App {
   text-align: center;
-  background-color:rgb(142, 125, 252);
-  }
 
+  background-color: rgb(173, 197, 246);
+}
+
+.App-header {
+  background-color: rgb(89, 70, 232);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+
+background-color:rgb(142, 125, 252);
+  }
 
 
 h1 {
@@ -39,10 +53,15 @@ a:link {
 }
 
 nav a:hover {
+
+  color: rgb(118, 255, 175);
+}
+
   color: rgb(250, 255, 156);
   font-size: 30px;
   text-shadow: #222;
 }
+
 
 
 main {
@@ -50,43 +69,51 @@ main {
   margin-left: 20px;
 }
 
-
-
-
-.button{
+.button {
   margin-right: 800 px;
   background-color: rgb(22, 228, 255);
   border-radius: 10px;
   border-color: none;
   padding: 20px;
-  font-size: 30px
+  font-size: 30px;
 }
 
+
+button:focus {
+  outline: none;
+}
 
 
 button:focus { outline: none; }
 
-.About{
+.About {
   text-align: center;
   font-size: 30px;
   padding-top:40px;
   background-color:#8daade;
 }
 
-#background_About{
-  background-color:antiquewhite;
+#background_About {
+  background-color: antiquewhite;
 }
 
-.main-image{
+.main-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.Nav-text{
+.Nav-text {
   font-size: 30px;
 }
+
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 
 .title{
  padding-top: 40px;
@@ -107,6 +134,7 @@ button:focus { outline: none; }
 .image{
   width:300px;
 }
+
 
 
 .App-link {
@@ -175,6 +203,9 @@ button:focus { outline: none; }
   text-align: center;
 }
 
+.form-detail {
+  text-align: left;
+}
 /*********************************
 **********Calendar
 *********************************/
@@ -282,7 +313,6 @@ abbr[title] {
   margin: 2rem;
   border: solid;
   padding: 1rem;
-
 }
 
 .PresetContent {
@@ -295,8 +325,8 @@ abbr[title] {
 }
 
 .PresetMain {
-text-align: left;
-margin-left: 2rem;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .PresetInfo {
@@ -307,4 +337,3 @@ margin-left: 2rem;
 .PresetCategory {
   font-weight: bold;
 }
-

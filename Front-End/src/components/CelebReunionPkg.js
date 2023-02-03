@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
@@ -19,38 +20,64 @@ export default function CelebrationReunionPkg() {
           </header>
           <main className="PresetMain">
             <p>
-              <span className="PresetCategory">Meal Service:</span>
+              <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span>
+              <span className="PresetCategory">Appetizers:</span> Kebabs,
+              Meatballs and Spring Rolls
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span>
+              <span className="PresetCategory">Entrées:</span> Filet Mignon,
+              Grilled Chicken and Grilled Fish
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span>
+              <span className="PresetCategory">Desserts:</span> Macarons, Red
+              Velvet Cake and Fruit Tarts
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
+              Orange Juice, Ginger Ale, Sprite and Coke
             </p>
             <p>
-              <span className="PresetCategory">Cash bar duration:</span>
+              <span className="PresetCategory">Cash bar duration:</span> 1.5
+              hours
             </p>
             <p>
-              <span className="PresetCategory">Open bar duration:</span>
+              <span className="PresetCategory">Open bar duration:</span> 2.5
+              hours
             </p>
             <p>
-              <span className="PresetCategory">Tables and chairs:</span>
+              <span className="PresetCategory">Tables and chairs:</span> modern
+              style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span>
+              <span className="PresetCategory">Flower Arrangements:</span> Pink
+              and White Chrysanthemums with Marigolds
             </p>
             <p>
-              <span className="PresetCategory">Music:</span>
+              <span className="PresetCategory">Music:</span> DJ
             </p>
-            <p>
-              <span className="PresetCategory">Entertainment:</span>
-            </p>
+            <div>
+              <Button
+                className="BackButton"
+                variant="secondary"
+                action
+                href="/eventPackages"
+              >
+                Back
+              </Button>
+            </div>
+            <br />
+            <div>
+              <Button
+                className="SelectButton"
+                variant="success"
+                action
+                href="/packageForm"
+              >
+                Select
+              </Button>
+            </div>
           </main>
           <footer>
             <p>Plan with us!</p>

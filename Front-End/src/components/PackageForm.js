@@ -14,7 +14,7 @@ export default function PackageForm() {
       <header className="form-header">
         <h1 className="form-title">Get the Party Started!</h1>
       </header>
-      <main>
+      <main className="form-detail">
         <Form>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEventPackage">
@@ -146,9 +146,22 @@ export default function PackageForm() {
             <Form.Control placeholder="List out food restrictions - Example: Vegan Diet, Nut Allergy, etc." />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <div>
+            <Button
+              className="BackButton"
+              variant="secondary"
+              action
+              href="/eventPackages"
+            >
+              Back
+            </Button>
+          </div>
+          <br />
+          <div>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </div>
         </Form>
       </main>
       <footer>

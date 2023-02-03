@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
@@ -60,6 +61,35 @@ function WeddingGlamPkg() {
             <p>
               <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
+            <div>
+              <Button
+                className="BackButton"
+                variant="secondary"
+                action
+                href="/eventPackages"
+              >
+                Back
+              </Button>{" "}
+              <Button
+                className="NextButton"
+                variant="secondary"
+                action
+                href="/shimmer"
+              >
+                Next
+              </Button>
+            </div>
+            <br />
+            <div>
+              <Button
+                className="SelectButton"
+                variant="success"
+                action
+                href="/packageForm"
+              >
+                Select
+              </Button>
+            </div>
           </main>
           <footer>
             <p>Plan with us!</p>

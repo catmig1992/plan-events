@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
@@ -19,38 +20,70 @@ export default function CelebrationGraduationPkg() {
           </header>
           <main className="PresetMain">
             <p>
-              <span className="PresetCategory">Meal Service:</span>
+              <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span>
+              <span className="PresetCategory">Appetizers:</span> Egg Rolls,
+              Kebabs and Meatballs
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span>
+              <span className="PresetCategory">Entrées:</span> Filet Mignon and
+              Grilled Chicken
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span>
+              <span className="PresetCategory">Desserts:</span> Fruit Tarts,
+              Chocolate Cake and Cream Puffs
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
+              Orange Juice, Sprite and Coke
             </p>
             <p>
-              <span className="PresetCategory">Cash bar duration:</span>
+              <span className="PresetCategory">Cash bar duration:</span> 2 hours
             </p>
             <p>
-              <span className="PresetCategory">Open bar duration:</span>
+              <span className="PresetCategory">Tables and chairs:</span> modern
+              style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Tables and chairs:</span>
+              <span className="PresetCategory">Flower Arrangements:</span> Pink,
+              Yellow and White Roses
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span>
+              <span className="PresetCategory">Music:</span> DJ
             </p>
             <p>
-              <span className="PresetCategory">Music:</span>
+              <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
-            <p>
-              <span className="PresetCategory">Entertainment:</span>
-            </p>
+            <div>
+              <Button
+                className="BackButton"
+                variant="secondary"
+                action
+                href="/eventPackages"
+              >
+                Back
+              </Button>{" "}
+              <Button
+                className="NextButton"
+                variant="secondary"
+                action
+                href="/holiday"
+              >
+                Next
+              </Button>
+            </div>
+            <br />
+            <div>
+              <Button
+                className="SelectButton"
+                variant="success"
+                action
+                href="/packageForm"
+              >
+                Select
+              </Button>
+            </div>
           </main>
           <footer>
             <p>Plan with us!</p>
