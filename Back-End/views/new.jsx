@@ -1,7 +1,7 @@
 const React = require('react')
 const Default = require('./Default')
 
-function New ({bakers}) {
+function New () {
     return (
       <Default>
         <h2>Add A Flower</h2>

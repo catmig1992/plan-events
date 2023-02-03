@@ -10,14 +10,15 @@ function Index({ florals, title }) {
       <h3>Florals</h3>
       <div className="newButton">
         <a href="/florals/new">
-          <button>Add A New Flower</button>
+          <button>Add New Flower</button>
         </a>
       </div>
       <ul>
         {florals.map((florals, index) => {
+          //{console.log(florals)}
           return (
             <li key={index}>
-              <a href={`/florals/${florals.id}`}>{florals.flower_type}</a>
+              <a href={`/florals/${florals._id}`}>{florals.floral_type}</a>
             </li>
           );
         })}

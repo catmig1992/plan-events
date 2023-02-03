@@ -28,7 +28,6 @@
 }
 
 
-
 h1 {
   text-align: center;
   color: rgb(10, 52, 137);
@@ -65,10 +64,15 @@ a:link {
 nav a:hover {
 
   color: rgb(118, 255, 175);
+
   
   font-size: 30px;
   text-shadow: #222;
 }
+
+
+
+
 
 
 

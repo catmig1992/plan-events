@@ -15,17 +15,22 @@ export default function CustomForm() {
         <h1 className="form-title">Get the Party Started!</h1>
       </header>
       <main className="form-detail">
-        <Form>
+        <Form action="/events" method="POST">
           <Row className="mb-3">
             <Col>
-              <Form.Label>Event Description</Form.Label>
-              <Form.Control placeholder="Example: Sophia & Oliver's Wedding" />
+              <Form.Label htmlFor="eventDescription">
+                Event Description
+              </Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Example: Sophia & Oliver's Wedding"
+              />
             </Col>
           </Row>
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridPartySize">
-              <Form.Label>Party Size</Form.Label>
+              <Form.Label htmlFor="partySize">Party Size</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Up to 150</option>
@@ -37,7 +42,7 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridStartTime">
-              <Form.Label>Start Time</Form.Label>
+              <Form.Label htmlFor="startTime">Start Time</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>09:00AM</option>
@@ -65,7 +70,7 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridEndTime">
-              <Form.Label>End Time</Form.Label>
+              <Form.Label htmlFor="endTime">End Time</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>02:00PM</option>
@@ -93,6 +98,7 @@ export default function CustomForm() {
           </Row>
 
           <Row>
+            <Form.Label htmlFor="eventDate">Event Date</Form.Label>
             <div className="calendar-container">
               <Calendar onChange={setDate} value={date} />
             </div>
@@ -103,30 +109,30 @@ export default function CustomForm() {
 
           <Row className="mb-3">
             <Col>
-              <Form.Label>First Name</Form.Label>
-              <Form.Control placeholder="First name" />
+              <Form.Label htmlFor="firstName">First Name</Form.Label>
+              <Form.Control type="text" placeholder="First name" />
             </Col>
             <Col>
-              <Form.Label>Last Name</Form.Label>
-              <Form.Control placeholder="Last name" />
+              <Form.Label htmlFor="lastName">Last Name</Form.Label>
+              <Form.Control type="text" placeholder="Last name" />
             </Col>
           </Row>
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Email</Form.Label>
+              <Form.Label htmlFor="email">Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control placeholder="Enter phone number" />
+              <Form.Label htmlFor="phoneNumber">Phone Number</Form.Label>
+              <Form.Control type="number" placeholder="Enter phone number" />
             </Form.Group>
           </Row>
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEventHall">
-              <Form.Label>Event Hall</Form.Label>
+              <Form.Label htmlFor="eventHall">Event Hall</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Enchantment Hall</option>
@@ -136,7 +142,7 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridMealService">
-              <Form.Label>Meal Service</Form.Label>
+              <Form.Label htmlFor="mealService">Meal Service</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Buffet</option>
@@ -146,12 +152,19 @@ export default function CustomForm() {
           </Row>
 
           <Form.Group className="mb-3" id="formGridFoodRestrictions">
-            <Form.Label>Food Restrictions</Form.Label>
-            <Form.Control placeholder="List out food restrictions - Example: Vegan Diet, Nut Allergy, etc." />
+            <Form.Label htmlFor="foodRestrictions">
+              Food Restrictions
+            </Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="List out food restrictions - Example: Vegan Diet, Nut Allergy, etc."
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" id="formGridAppetizers">
-            <Form.Label>Appetizer Options</Form.Label>
+            <Form.Label htmlFor="appetizerOptions">
+              Appetizer Options
+            </Form.Label>
             <Form.Check type="checkbox" label="Bacon Wrapped Shrimp" />
             <Form.Check type="checkbox" label="Bruschetta Toast - Vegetarian" />
             <Form.Check type="checkbox" label="Egg Rolls - Vegetarian" />
@@ -160,25 +173,25 @@ export default function CustomForm() {
             <Form.Check type="checkbox" label="Meatball" />
             <Form.Check type="checkbox" label="Sashimi Nachos" />
             <Form.Check type="checkbox" label="Spring Rolls" />
-            <Form.Control placeholder="Special Requests" />
+            <Form.Control type="text" placeholder="Special Requests" />
           </Form.Group>
 
           <Form.Group className="mb-3" id="formGridEntrées">
-            <Form.Label>Entrée Options</Form.Label>
+            <Form.Label htmlFor="entreeOptions">Entrée Options</Form.Label>
             <Form.Check type="checkbox" label="Filet Mignon" />
-            <Form.Control placeholder="Quantity" />
+            <Form.Control type="number" placeholder="Quantity" />
             <Form.Check type="checkbox" label="Grilled Chicken" />
-            <Form.Control placeholder="Quantity" />
+            <Form.Control type="number" placeholder="Quantity" />
             <Form.Check type="checkbox" label="Grilled Fish" />
-            <Form.Control placeholder="Quantity" />
+            <Form.Control type="number" placeholder="Quantity" />
             <Form.Check type="checkbox" label="Vegan Dish" />
-            <Form.Control placeholder="Quantity" />
+            <Form.Control type="number" placeholder="Quantity" />
             <Form.Check type="checkbox" label="Kids Meal - Chicken" />
-            <Form.Control placeholder="Quantity" />
+            <Form.Control type="number" placeholder="Quantity" />
           </Form.Group>
 
           <Form.Group className="mb-3" id="formGridDesserts">
-            <Form.Label>Dessert Options</Form.Label>
+            <Form.Label htmlFor="dessertOptions">Dessert Options</Form.Label>
             <Form.Check type="checkbox" label="Chocolate Cake" />
             <Form.Check type="checkbox" label="Vanilla Cake" />
             <Form.Check type="checkbox" label="Red Velvet Cake" />
@@ -188,7 +201,9 @@ export default function CustomForm() {
           </Form.Group>
 
           <Form.Group className="mb-3" id="formGridBeverages">
-            <Form.Label>Self Service Non-Alcoholic Beverage Table</Form.Label>
+            <Form.Label htmlFor="nonalcoholicBeverage">
+              Self Service Non-Alcoholic Beverage Table
+            </Form.Label>
             <Form.Check type="checkbox" label="Apple Juice" />
             <Form.Check type="checkbox" label="Orange Juice" />
             <Form.Check type="checkbox" label="Pineapple Juice" />
@@ -200,12 +215,12 @@ export default function CustomForm() {
             <Form.Check type="checkbox" label="Diet Coke" />
             <Form.Check type="checkbox" label="Ginger Ale" />
             <Form.Check type="checkbox" label="Dr. Pepper" />
-            <Form.Control placeholder="Special Requests" />
+            <Form.Control type="text" placeholder="Special Requests" />
           </Form.Group>
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridBarService">
-              <Form.Label>Bar Service</Form.Label>
+              <Form.Label htmlFor="barService">Bar Service</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Cash Bar</option>
@@ -215,7 +230,9 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridCashBarTime">
-              <Form.Label>Cash Bar Start Time</Form.Label>
+              <Form.Label htmlFor="cashBarStartTime">
+                Cash Bar Start Time
+              </Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>11:30AM</option>
@@ -238,7 +255,9 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridCashBarTime">
-              <Form.Label>Cash Bar End Time</Form.Label>
+              <Form.Label htmlFor="cashBarEndTime">
+                Cash Bar End Time
+              </Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>02:00PM</option>
@@ -265,7 +284,9 @@ export default function CustomForm() {
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridOpenBarTime">
-              <Form.Label>Open Bar Start Time</Form.Label>
+              <Form.Label htmlFor="openBarStartTime">
+                Open Bar Start Time
+              </Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>11:30AM</option>
@@ -288,7 +309,9 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridOpenBarTime">
-              <Form.Label>Open Bar End Time</Form.Label>
+              <Form.Label htmlFor="openBarEndTime">
+                Open Bar End Time
+              </Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>02:00PM</option>
@@ -315,7 +338,7 @@ export default function CustomForm() {
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridFurnitureStyles">
-              <Form.Label>Furniture Style</Form.Label>
+              <Form.Label htmlFor="furnitureStyle">Furniture Style</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Classic</option>
@@ -325,7 +348,7 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridTableStyles">
-              <Form.Label>Table Style</Form.Label>
+              <Form.Label htmlFor="tableStyle">Table Style</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Round Table for 6</option>
@@ -342,7 +365,7 @@ export default function CustomForm() {
 
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridMusic">
-              <Form.Label>Music Options</Form.Label>
+              <Form.Label htmlFor="musicOptions">Music Options</Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>DJ</option>
@@ -352,7 +375,9 @@ export default function CustomForm() {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridFlowers">
-              <Form.Label>Flower Arrangement Options</Form.Label>
+              <Form.Label htmlFor="flowerArrangement">
+                Flower Arrangement Options
+              </Form.Label>
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>Red, Pink and White Rose Table Arrangements</option>
@@ -373,7 +398,9 @@ export default function CustomForm() {
 
           <Row className="mb-3">
             <Form.Group className="mb-3" id="formGridEntertainment">
-              <Form.Label>Entertainment Options</Form.Label>
+              <Form.Label htmlFor="entertainmentOptions">
+                Entertainment Options
+              </Form.Label>
               <Form.Check type="checkbox" label="Magician" />
               <Form.Check type="checkbox" label="Photo Booth" />
             </Form.Group>
