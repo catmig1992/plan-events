@@ -36,18 +36,14 @@ app.use(express.urlencoded({extended: true}));
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  res.send("We're so glad you're here. Lets build your event!");
 });
 
-// breads  --- in our case - event index
-// const eventsController = require("./controllers/events_controller.js");
-// app.use("/events", eventsController);
+//breads  --- in our case - event index
+ const floralsController = require("./controllers/florals_controller.js");
+ app.use("/florals", floralsController);
 
-
-
-
-
-
+ 
 
 
 // 404 Page
