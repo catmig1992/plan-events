@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
 import "../App.css";
 import Gallery from "./Gallery";
+import About from "./About";
+
 
 import EventPackages from "./EventPackages";
 import CustomForm from "./CustomForm";
@@ -18,11 +20,12 @@ import WeddingBudgetPkg from "./WeddingBgtPkg";
 import WeddingGlamPkg from "./WeddingGlamPkg";
 import WeddingShimmerPkg from "./WeddingShimmerPkg";
 
+
 export default function NavBar() {
   return (
     /////Navigation Bar///////
+    
     <div className="App">
-      <Router>
         <nav>
           <ul>
             <li>
@@ -31,7 +34,12 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a className="Nav-text" href="/services">
+              <a className="Nav-text" href="/About">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="Nav-text" href="/Services">
                 Services
               </a>
             </li>
@@ -57,7 +65,7 @@ export default function NavBar() {
             </li>
           </ul>
         </nav>
-
+<Router>
         <div className="display">
           {/* <Route path="/" component={Home} /> */}
           {/* <Route path="/services" component={Services} /> */}
@@ -77,8 +85,11 @@ export default function NavBar() {
           <Route path="/shimmer" component={WeddingShimmerPkg} />
           <Route path="/packageForm" render={() => <PackageForm />} />
           <Route path="/customForm" render={() => <CustomForm />} />
+          <Route path="/gallery" render={() => <Gallery />} />
+          <Route path="/About" render={() => <About />} />
         </div>
       </Router>
     </div>
   );
 }
+
