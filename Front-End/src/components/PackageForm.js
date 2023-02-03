@@ -138,11 +138,7 @@ export default function PackageForm() {
           </Row>
 
           <Form.Group className="mb-3" id="formGridFoodRestrictions">
-            <Form.Check
-              type="switch"
-              id="custom-switch"
-              label="Food Restrictions"
-            />
+            <Form.Label>Food Restrictions</Form.Label>
             <Form.Control placeholder="List out food restrictions - Example: Vegan Diet, Nut Allergy, etc." />
           </Form.Group>
 
