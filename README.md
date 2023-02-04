@@ -1,16 +1,19 @@
-This App will allow clients to plan their events on an existing event space. Our App will have a database of vendors to plan your event with. 
+Sparkly Event Planner
 
 
+Our application will demonstrate how you can plan for special events while keeping everything organized, especially if you have clients that are specific on their requests.
 
+Launching the application will take you to the homepage. You can casually look at the About page and Gallery page for more context of the services offered and checkout some event packages to get an idea of what our clients can receive.
 
+But the most important button you want to click on is the “create an event” button. Once clicked, this button will direct you to a form where users can fill out their personal information and select their options for their event.
 
+Once the form is completed, users will click “submit” and the information provided on the form will go directly to the database where it will be stored.
 
+When you click “services,” it will take you to the backend where an Administrator will look at the event information and determine the fate of the event, whether the client wants additional services, change services originally selected or cancel the event per clients’ request. There will be CRUD features which the Administrator will be able to create an event, review the event, update an event, and delete the event.
 
+This is a must for all Event Planners who are trying to find an easier way to organize events and keep track of all event details to keep clients happy and for the success of an Event Planner’s business.
 
-
-
-
-
+////////////////////////////////////////////////////////////
 
 # Getting Started with Create React App
 
