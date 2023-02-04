@@ -1,33 +1,33 @@
 const React = require('react')
 const Default = require('./layouts/Default')
 
-function Edit ({bread, bakers}) {
+function Edit ({florals, floralStyle}) {
     return (
       <Default>
-        <h2>Edit a Bread</h2>
+        <h2>Edit a Flower</h2>
         
-        <form action={`/breads/${bread.id}?_method=PUT`} method="POST">
+        <form action={`/breads/${florals.id}?_method=PUT`} method="POST">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
             id="name"
             required
-            defaultValue={bread.name}
+            defaultValue={florals.type}
           />
           <label htmlFor="image">Image</label>
           <input
             type="text"
             name="image"
             id="image"
-            defaultValue={bread.image}
+            defaultValue={florals.image}
           />
               
-              <label htmlFor="baker">Baker</label>
-                  <select name="baker" id="baker" defaultValue={bread.baker}>
+              <label htmlFor="baker">Floral Style</label>
+                  <select name="baker" id="baker" defaultValue={florals.floralStyle}>
                      {bakers.map((baker) => {
                 return(
-                    <option value={baker.id} key={baker.id}>{baker.name}</option>
+                    <option value={florals.id} key={florals.id}>{floralStyle.type}</option>
                 )
             })}
                   </select>
@@ -36,9 +36,9 @@ function Edit ({bread, bakers}) {
           <label htmlFor="inSeason">in Season?</label>
           <input
             type="checkbox"
-            name="hasGluten"
-            id="hasGluten"
-            defaultChecked={bread.hasGluten}
+            name="inSeason"
+            id="inSeason"
+            defaultChecked={florals.inSeason}
           />
           <br />
           <input type="submit"/>

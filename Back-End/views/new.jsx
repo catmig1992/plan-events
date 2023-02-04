@@ -14,6 +14,15 @@ function New () {
             required
           />
 
+          {/* <label htmlFor="baker">Floral Style</label>
+                <select name="floralStyle" id="floralStyle">
+                   {floralStyle.map((floralStyle) => {
+                return(
+                    <option value={floralStyle.id} key={floralStyle.id}>{floralStyle.type}</option>
+                )
+            })}
+            </select> */}
+
           <label htmlFor="image">Image</label>
           <input
             type="text"
