@@ -1,32 +1,178 @@
 .App {
   text-align: center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.body{
+  background: url('http://localhost:3000/image/background.png');
+  background-size: 1800px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+}
+.blank_block{
+  opacity: 0%;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(89, 70, 232);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 40px;
   color: white;
 }
+
+
+h1 {
+  text-align: center;
+  color: rgb(10, 52, 137);
+  font:70px;
+}
+
+nav {
+  background-color: rgb(73, 10, 93);
+  padding: 10px;
+  padding-top:20px;
+  text-align: center;
+  font-size: 6px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  font-size: 10 px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav a:hover {
+
+  color: rgb(118, 255, 175);
+
+  
+  font-size: 30px;
+  text-shadow: #222;
+}
+
+
+
+
+
+
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.button {
+  margin-right: 800 px;
+  background-color: rgb(22, 228, 255);
+  border-radius: 10px;
+  border-color: none;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+
+button:focus { outline: none; }
+
+.About {
+  text-align: center;
+  font-size: 30px;
+  padding-top:40px;
+  padding-bottom:500px;
+  background-color:#8daade;
+
+  margin:80px;
+ 
+}
+
+.About_text {
+  opacity:100%;
+}
+
+.main-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Nav-text {
+  font-size: 30px;
+}
+
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.title{
+ padding-top: 40px;
+ padding-bottom: 40px;
+ font-size:70px;
+
+}
+
+.myDIV {
+  height:300px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.image{
+  width:300px;
+}
+
+
 
 .App-link {
   color: #61dafb;
 }
+
+.header{
+  position: sticky;
+}
+
+/*********Gallery******/
+
+
+
+.imagegallery{
+  padding-left:20%;
+  padding-right:20%;
+  padding-top:5%;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +181,176 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*********************************
+**********Event Packages
+*********************************/
+.packages {
+  text-align: center;
+}
+
+.packages-header {
+  background-color:#8daade;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:100px;
+}
+
+.package-list {
+  text-align: left;
+}
+
+/*********************************
+**********Event Forms
+*********************************/
+.form {
+  background-color: #b0b0ae;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-detail {
+  text-align: left;
+}
+/*********************************
+**********Calendar
+*********************************/
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-calendar {
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+.react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+abbr[title] {
+  text-decoration: none;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 6px;
+}
+.react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+}
+.react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+}
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+}
+.react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #6f48eb;
+  color: white;
+}
+.react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+}
+
+/*********************************
+**********Preset Packages
+*********************************/
+.PresetPkgs {
+  text-align: center;
+  margin: 2rem;
+  border: solid;
+  padding: 1rem;
+}
+
+.PresetContent {
+  background-color: #fff7d5;
+  padding: 1rem;
+}
+
+.PresetHeader {
+  padding: 1.5rem;
+}
+
+.PresetMain {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.PresetInfo {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.PresetCategory {
+  font-weight: bold;
 }
