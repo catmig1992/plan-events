@@ -1,5 +1,5 @@
 const React = require("react");
-const Default = require("./Default");
+const Default = require("./layouts/Default");
 
 function Show({ florals}) {
   // Confirm we are getting our bread data in the terminal.

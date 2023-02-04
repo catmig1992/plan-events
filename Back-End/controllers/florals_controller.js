@@ -1,68 +1,20 @@
-// // dependencies
-// const express = require('express')
-// const florals = express.Router()
-// const florals = require('../models/.js')
-// const floralsSeedData = require('../models/florals_seed.js')
-
-
-// florals.get('/data/seed', (req, res) => {
-//     Florals.insertMany(floralsSeedData)
-//         .then(res.redirect('/event'))
-// })
-
-// // Index: 
-// florals.get('/', (req, res) => {
-//     florals.find()
-//         .populate('florals')
-//         .then(foundFlorals => {
-//             res.send(foundFlorals)
-//         })
-// })  
-
-// // Show: 
-// florals.get('/:id', (req, res) => {
-//     florals.findById(req.params.id)
-//         .populate('florals')
-//         .then(foundFlorals => {
-//             res.render('floralsShow', {
-//                 catering: foundFlorals
-//             })
-//         })
-// })
-
-// // delete
-// catering.delete('/:id', (req, res) => {
-//     Catering.findByIdAndDelete(req.params.id) 
-//       .then(deletedcatering => { 
-//         res.status(303).redirect('/ca')
-//       })
-// })
-
-
-
-
-
-// // export
-// module.exports = florals
-
-
-
 //DEPENCIES
 const express = require('express');
 const florals = express.Router();
 const Florals = require('../models/florals.js');
-const Catering = require('../models/catering.js');
+const FloralStyle = require ('../models/floralStyle.js');
+
 
 // INDEX
 florals.get('/', (req, res) => {
-  Catering.find()
-    .then(foundCatering => {
+  FloralStyle.find()
+    .then(foundFloralStyles => {
       Florals.find()
       .then(foundFlorals => {
           res.render('index', {
               florals: foundFlorals,
-              catering: foundCatering,
-              title: 'Index Page'
+              //floralStyle: foundFloralStyle,
+              title: 'Vendor DataBase'
           })
       })
     })
@@ -70,10 +22,10 @@ florals.get('/', (req, res) => {
 
 // NEW
 florals.get('/new', (req, res) => {
-    Catering.find()
-        .then(foundCatering => {
+    FloralStyle.find()
+        .then(foundFloralStyle => {
             res.render('new', {
-                bakers: foundCatering
+                floralStyle: foundFloralStyle
             })
       })
 })
@@ -81,11 +33,11 @@ florals.get('/new', (req, res) => {
 // SHOW
 florals.get('/:id', (req, res) => {
   Florals.findById(req.params.id)
-      .populate('catering')
-      .then(foundFlorals => {
+      .populate('floralStyle')
+      .then(foundFloralStyle => {
         res.render('show', {
-            florals: foundFlorals
-        })
+            florals: foundFloralStyle
+        }) 
       })
       .catch(err => {
         res.send('404')
@@ -97,20 +49,24 @@ florals.post('/', (req, res) => {
   if (!req.body.image) {
     req.body.image = undefined;
   }
-  
+  if (req.body.inSeason === 'on') {
+    req.body.inSeason = true;
+  } else {
+    req.body.inSeason = false;
+  }
   Florals.create(req.body);
   res.redirect('/florals');
 });
 
 // EDIT
 florals.get('/:id/edit', (req, res) => {
-  Catering.find()
-    .then(foundCatering => {
+  FloralStyle.find()
+    .then(foundFloralStyle => {
         Florals.findById(req.params.id)
           .then(foundFlorals => {
             res.render('edit', {
                 florals: foundFlorals, 
-                catering: foundCatering 
+                floralStyle: foundFloralStyle
             })
           })
     })
@@ -121,13 +77,13 @@ florals.get('/:id/edit', (req, res) => {
 // UPDATE
 
 florals.put('/:id', (req, res) => {
-  if(req.body.hasGluten === 'on'){
-    req.body.hasGluten = true
+  if(req.body.inSeason === 'on'){
+    req.body.inSeason = true
   } else {
-    req.body.hasGluten = false
+    req.body.inSeason = false
   }
   Florals.findByIdAndUpdate(req.params.id, req.body, { new: true }) 
-    .then(updatedBread => {
+    .then(updatedFlorals => {
       console.log(updatedFlorals) 
       res.redirect(`/florals/${req.params.id}`) 
     })
