@@ -18,7 +18,7 @@ function Index({ florals, title }) {
           //{console.log(florals)}
           return (
             <li key={index}>
-              <a href={`/florals/${florals._id}`}>{florals.floral_type}</a>
+              <a href={`/florals/${florals._id}`}>{florals.flower_type}</a>
             </li>
           );
         })}

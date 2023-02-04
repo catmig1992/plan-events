@@ -33,7 +33,7 @@ function Edit ({bread, bakers}) {
                   </select>
 
 
-          <label htmlFor="hasGluten">Has Gluten?</label>
+          <label htmlFor="inSeason">in Season?</label>
           <input
             type="checkbox"
             name="hasGluten"

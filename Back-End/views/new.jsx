@@ -19,12 +19,12 @@ function New () {
             type="text"
             name="image"
             id="image"/>
-          <label htmlFor="quantity">Quanity</label>
+          <label htmlFor="inSeason">In Season</label>
           <input
-            type="number"
-            name="quanity"
-            id="quantity"
-            defaultNumber
+            type="checkbox"
+            name="inSeason"
+            id="inSeason"
+            defaultChecked
           />
           <br />
           <input type="submit"/>
