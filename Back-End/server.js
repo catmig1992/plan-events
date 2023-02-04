@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
   res.send("We're so glad you're here. Lets build your event!");
 });
 
-//breads  --- in our case - event index
+//florals
  const floralsController = require("./controllers/florals_controller.js");
  app.use("/florals", floralsController);
 
