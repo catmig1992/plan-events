@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-
-
 }
 
 .body{
@@ -62,10 +60,7 @@ a:link {
 }
 
 nav a:hover {
-
   color: rgb(118, 255, 175);
-
-  
   font-size: 30px;
   text-shadow: #222;
 }
@@ -76,10 +71,7 @@ nav a:hover {
 
 
 
-main {
-  margin-right: 20px;
-  margin-left: 20px;
-}
+
 
 .button {
   margin-right: 800 px;
@@ -91,33 +83,69 @@ main {
 }
 
 
-button:focus {
-  outline: none;
+button:hover{
+  background: url('http://localhost:3000/image/glitter.png');
+  background-size: 100px;
 }
 
-
-button:focus { outline: none; }
+/****ABOUT******/
 
 .About {
   text-align: center;
   font-size: 30px;
-  padding-top:40px;
-  padding-bottom:500px;
-  background-color:#8daade;
+ }
 
-  margin:80px;
- 
+.About_image{
+  margin:40px;
+  margin-top:70px;
 }
-
 .About_text {
-  opacity:100%;
+  font-size: 25px;
+  margin:20px;
+  margin-left:30px;
+  margin-right:100px;
+  margin-top:30px;
 }
 
-.main-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.About_Title{
+  font-size: 90px;
+  margin-top:70px;
+  margin-bottom:10px;
+  text-align: center;
+}
+.background_About{
+  padding-top:40px;
+  padding-bottom:100px;
+  background-color:#8daade;
+  margin:80px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about_row {
+  display: flex;
+  background-color:#8daade;
+  position:relative;
+  align-content: center;
+  
+  padding-bottom:100px;
+}
+
+.about_column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 .Nav-text {
@@ -172,16 +200,6 @@ button:focus { outline: none; }
 }
 
 
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /*********************************
 **********Event Packages
