@@ -2,18 +2,18 @@
 const express = require('express');
 const florals = express.Router();
 const Florals = require('../models/florals.js');
-const Florals = require ('..models/florals.js');
+const FloralStyle = require ('../models/floralStyle.js');
 
 
 // INDEX
 florals.get('/', (req, res) => {
-  FloralStyles.find()
+  FloralStyle.find()
     .then(foundFloralStyles => {
       Florals.find()
       .then(foundFlorals => {
           res.render('index', {
               florals: foundFlorals,
-              floralStyle: foundFloralStyle,
+              //floralStyle: foundFloralStyle,
               title: 'Vendor DataBase'
           })
       })
@@ -37,7 +37,7 @@ florals.get('/:id', (req, res) => {
       .then(foundFloralStyle => {
         res.render('show', {
             florals: foundFloralStyle
-        }) = 
+        }) 
       })
       .catch(err => {
         res.send('404')
