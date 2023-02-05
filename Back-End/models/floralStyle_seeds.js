@@ -10,6 +10,6 @@ module.exports =[
     {
         name: 'arch',
         description: 'sweet for weddings and fun for pictures'
-    },
+    }
  
 ]
