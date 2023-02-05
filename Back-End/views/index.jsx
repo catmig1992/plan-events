@@ -1,23 +1,21 @@
 const React = require('react')
-const Default = require('./Default')
+const Default = require('./layout/default')
 
 function Index({ florals, floralStyle, title }) {
   return (
     <Default title={title}>
       <h2>Vendor DataBase Page</h2>
-      {/* <p>I have {breads[0].name} bread!</p> */}
-      {/* This is a JSX comment. */}
 
-      {/* <h3>Floral Style</h3>
-      <ul>
+      <h3>Floral Style</h3>
+      {/* <ul>
         {floralStyle.map((floralStyle) => {
           return (
             <li key={floralStyle.id}>
-              <a href={`/florals/${floralStyle.id}`}>{floralStyle.type}</a>
+              <a href={`/florals/${floralStyle.id}`}>{floralStyle.name}</a>
             </li>
           );
         })}
-      </ul> */}
+      </ul>  */}
 
 
       <h3>Florals</h3>
@@ -31,7 +29,7 @@ function Index({ florals, floralStyle, title }) {
           //{console.log(florals)}
           return (
             <li key={index}>
-              <a href={`/florals/${florals._id}`}>{florals.flower_type}</a>
+              <a href={`/florals/${florals.id}`}>{florals.flower}</a>
             </li>
           );
         })}

@@ -10,8 +10,8 @@ floralStyle.get('/data/seed', (req, res) => {
 })
 
 // Index: 
-floralsStyle.get('/', (req, res) => {
-    FloralsStyle.find()
+floralStyle.get('/', (req, res) => {
+    FloralStyle.find()
         .populate('floralStyle')
         .then(foundFlorals => {
             res.send(foundFlorals)

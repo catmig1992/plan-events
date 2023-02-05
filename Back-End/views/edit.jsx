@@ -1,19 +1,19 @@
 const React = require('react')
-const Default = require('./layouts/Default')
+const Default = require('./layout/default')
 
 function Edit ({florals, floralStyle}) {
     return (
       <Default>
         <h2>Edit a Flower</h2>
         
-        <form action={`/breads/${florals.id}?_method=PUT`} method="POST">
+        <form action={`/florals/${florals.id}?_method=PUT`} method="POST">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
             id="name"
             required
-            defaultValue={florals.type}
+            defaultValue={florals.flower}
           />
           <label htmlFor="image">Image</label>
           <input
@@ -23,9 +23,9 @@ function Edit ({florals, floralStyle}) {
             defaultValue={florals.image}
           />
               
-              <label htmlFor="baker">Floral Style</label>
-                  <select name="baker" id="baker" defaultValue={florals.floralStyle}>
-                     {bakers.map((baker) => {
+              <label htmlFor="floralStyle">Floral Style</label>
+                  <select name="floral style" id="floral style" defaultValue={florals.floralStyle}>
+                     {floralStyle.map((floralStyle) => {
                 return(
                     <option value={florals.id} key={florals.id}>{floralStyle.type}</option>
                 )

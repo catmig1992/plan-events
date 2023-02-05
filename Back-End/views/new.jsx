@@ -1,7 +1,7 @@
 const React = require('react')
-const Default = require('./Default')
+const Default = require('./layout/default')
 
-function New () {
+function New ({floralStyle}) {
     return (
       <Default>
         <h2>Add A Flower</h2>
@@ -14,14 +14,14 @@ function New () {
             required
           />
 
-          {/* <label htmlFor="baker">Floral Style</label>
+          <label htmlFor="floralStyle">Floral Style</label>
                 <select name="floralStyle" id="floralStyle">
                    {floralStyle.map((floralStyle) => {
                 return(
-                    <option value={floralStyle.id} key={floralStyle.id}>{floralStyle.type}</option>
+                    <option value={floralStyle.id} key={floralStyle.id}>{floralStyle.name}</option>
                 )
             })}
-            </select> */}
+            </select>
 
           <label htmlFor="image">Image</label>
           <input

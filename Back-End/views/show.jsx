@@ -1,18 +1,17 @@
 const React = require("react");
-const Default = require("./layouts/Default");
+const Default = require("./layout/default");
 
 function Show({ florals}) {
-  // Confirm we are getting our bread data in the terminal.
-  // console.log(bread.name)
+ 
   return (
     <Default>
-      <h3>{florals.name}</h3>
-      {/* <p>
+      <h3>{florals.flower}</h3>
+      <p>
         and it is
-        {florals.inSeason ? <span> does </span> : <span> is NOT </span>}
+        {florals.inSeason ? <span>  </span> : <span> is NOT </span>}
         in season.
-      </p> */}
-      <img src={florals.image} alt={florals.name} />
+      </p>
+      <img src={florals.image} alt={florals.flower} />
       {/* <p>{bread.getBakedBy()}</p> */}
       <a href={`/florals/${florals.id}/edit`}>
         <button>Edit</button>

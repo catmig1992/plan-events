@@ -9,7 +9,7 @@ const floralStyleSchema = new Schema(
       name: {
         type: String,
         required: true,
-        enum: ["Bouquet", "Aisle Decor", "Arch", "Centerpiece", "Petal Scatter",],
+        enum: ["Bouquet", "CenterPiece", "Arch"],
       },
     //   startDate: {
     //     type: Date,
