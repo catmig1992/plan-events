@@ -2,7 +2,7 @@
 const express = require('express')
 const floralStyle = express.Router()
 const FloralStyle = require('../models/floralStyle.js')
-const floralStyleSeedData = require('../models/floralStyle_seed.js')
+//const floralStyleSeedData = require('../models/floralStyle_seed.js')
 
 floralStyle.get('/data/seed', (req, res) => {
     FloralStyle.insertMany(floralStyleSeedData)

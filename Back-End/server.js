@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 
 //florals
  const floralsController = require('./controllers/florals_controller.js');
- app.use("/florals", floralsController);
+ app.use('/florals', floralsController);
 
  // floralStyle
 const floralStyleController = require('./controllers/floralStyle_controller.js')

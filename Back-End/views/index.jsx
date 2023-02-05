@@ -6,8 +6,8 @@ function Index({ florals, floralStyle, title }) {
     <Default title={title}>
       <h2>Vendor DataBase Page</h2>
 
-      <h3>Floral Style</h3>
-      {/* <ul>
+      {/* <h3>Floral Style</h3>
+      <ul>
         {floralStyle.map((floralStyle) => {
           return (
             <li key={floralStyle.id}>
