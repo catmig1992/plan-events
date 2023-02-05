@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 
 
 
-
 // CONFIGURATION
 require('dotenv').config();
 const PORT = process.env.PORT;
@@ -24,7 +23,6 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
     console.log("connected to mongo");
   });
   
-
 // MIDDLEWARE
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
@@ -34,19 +32,21 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended: true}));
 
 
+
 // ROUTES
 app.get("/", (req, res) => {
   res.send("We're so glad you're here. Lets build your event!");
 });
 
-//breads  --- in our case - event index
- const floralsController = require("./controllers/florals_controller.js");
+//florals
+ const floralsController = require('./controllers/florals_controller.js');
  app.use("/florals", floralsController);
 
- 
+ // floralStyle
+const floralStyleController = require('./controllers/floralStyle_controller.js')
+app.use('/floralStyle', floralStyleController)
 
-
-// 404 Page
+// 404 Pagenp
 app.get('*', (req, res) => {
   res.send('404')
 });
@@ -56,5 +56,4 @@ app.listen(PORT, () => {
   console.log('listening on port', PORT);
 });
 
-
-module.exports = app;
+//module.exports = app;

@@ -1,17 +1,15 @@
 module.exports =[
     {
-        type: 'Bouquet'
+        name: 'Bouquet',
+        description: 'a wedding favorite'
     },
     {
-        type: 'Aisle Decor'
-    };
-    {
-        type: 'Arch'
+        name: 'centerpiece',
+        description: 'usefull for dinners and banquets'
     },
     {
-        type:'Centerpiece'
+        name: 'arch',
+        description: 'sweet for weddings and fun for pictures'
     },
-    {
-        type: 'Petal Scatter'
-    }
+ 
 ]

@@ -8,7 +8,7 @@ const FloralStyle = require ('../models/floralStyle.js');
 // INDEX
 florals.get('/', (req, res) => {
   FloralStyle.find()
-    .then(foundFloralStyles => {
+    .then(foundFloralStyleChoice => {
       Florals.find()
       .then(foundFlorals => {
           res.render('index', {
@@ -66,7 +66,7 @@ florals.get('/:id/edit', (req, res) => {
           .then(foundFlorals => {
             res.render('edit', {
                 florals: foundFlorals, 
-                floralStyle: foundFloralStyle
+                floralStyle: foundFloralStyleChoice
             })
           })
     })

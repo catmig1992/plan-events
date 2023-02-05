@@ -5,12 +5,12 @@ const { Schema } = mongoose
 
 // schema
 const floralsSchema = new Schema({
-  name: { type: String, required: true },
-  hasGluten: Boolean,
+  flower: { type: String, required: true },
+  inSeason: Boolean,
   image: { type: String, default: 'https://images.unsplash.com/photo-1517722014278-c256a91a6fba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80' },
-  baker: {
+  floralStyle: {
     type: Schema.Types.ObjectId,
-    ref: 'floralStyle'
+    ref: 'Floral Style'
   }
 })
 
