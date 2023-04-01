@@ -8,6 +8,7 @@ import "../App.css";
 import "react-calendar/dist/Calendar.css";
 
 //Pass in {events}
+let event: any;
 
 export default function EditCustomForm() {
   const [date, setDate] = useState(new Date());

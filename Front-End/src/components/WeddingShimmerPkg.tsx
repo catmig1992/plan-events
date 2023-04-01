@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-function WeddingGlamPkg() {
+function WeddingShimmerPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Wedding Glam Package</h1>
+            <h1>Wedding Shimmer Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -23,40 +23,39 @@ function WeddingGlamPkg() {
               <span className="PresetCategory">Meal Service:</span> Sit-Down
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Bruschetta
-              Toast, Kebabs, Meatballs and Spring Rolls
+              <span className="PresetCategory">Appetizers:</span> Bacon Wrapped
+              Shrimp, Bruschetta Toast, Fruit Skewers, Kebabs and Sashimi Nachos
             </p>
             <p>
               <span className="PresetCategory">Entrées:</span> Filet Mignon,
               Grilled Chicken and Grilled Fish
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span> Chocolate Cake,
-              Vanilla Cake, Red Velvet Cake and Fruit Tarts
+              <span className="PresetCategory">Desserts:</span> Vanilla Cake,
+              Red Velvet Cake, Fruit Tarts and Macarons
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
-              Apple Juice, Orange Juice, Pineapple Juice, Sprite, Coke and Dr.
-              Pepper
+              Apple Juice, Orange Juice, Pineapple Juice, Sprite, Coke, Ginger
+              Ale and Dr. Pepper
             </p>
             <p>
               <span className="PresetCategory">Cash bar duration:</span> 2.5
               hours
             </p>
             <p>
-              <span className="PresetCategory">Open bar duration:</span> 1.5
-              hours
+              <span className="PresetCategory">Open bar duration:</span> 2 hours
             </p>
             <p>
-              <span className="PresetCategory">Tables and chairs:</span> classic
+              <span className="PresetCategory">Tables and chairs:</span> rustic
               style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span> Pink,
-              Yellow and White Roses
+              <span className="PresetCategory">Flower Arrangements:</span> Red,
+              Pink, and White Roses
             </p>
             <p>
-              <span className="PresetCategory">Music:</span> Solo Artist
+              <span className="PresetCategory">Music:</span> Live Band
             </p>
             <p>
               <span className="PresetCategory">Entertainment:</span> Photo Booth
@@ -65,18 +64,9 @@ function WeddingGlamPkg() {
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
-              </Button>{" "}
-              <Button
-                className="NextButton"
-                variant="secondary"
-                action
-                href="/shimmer"
-              >
-                Next
               </Button>
             </div>
             <br />
@@ -84,7 +74,6 @@ function WeddingGlamPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select
@@ -100,4 +89,4 @@ function WeddingGlamPkg() {
   );
 }
 
-export default WeddingGlamPkg;
+export default WeddingShimmerPkg;

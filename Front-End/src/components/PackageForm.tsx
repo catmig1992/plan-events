@@ -146,7 +146,6 @@ export default function PackageForm() {
             <Button
               className="BackButton"
               variant="secondary"
-              action
               href="/eventPackages"
             >
               Back

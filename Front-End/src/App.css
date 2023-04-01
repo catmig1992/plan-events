@@ -2,15 +2,14 @@
   text-align: center;
 }
 
-.body{
-  background: url('http://localhost:3000/image/background.png');
+.body {
+  background: url("http://localhost:3000/image/background.png");
   background-size: 1800px;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
-
 }
-.blank_block{
+.blank_block {
   opacity: 0%;
 }
 
@@ -25,17 +24,16 @@
   color: white;
 }
 
-
 h1 {
   text-align: center;
   color: rgb(10, 52, 137);
-  font:70px;
+  font: 70px;
 }
 
 nav {
   background-color: rgb(73, 10, 93);
   padding: 10px;
-  padding-top:20px;
+  padding-top: 20px;
   text-align: center;
   font-size: 6px;
 }
@@ -65,14 +63,6 @@ nav a:hover {
   text-shadow: #222;
 }
 
-
-
-
-
-
-
-
-
 .button {
   margin-right: 800 px;
   background-color: rgb(22, 228, 255);
@@ -82,9 +72,8 @@ nav a:hover {
   font-size: 30px;
 }
 
-
-button:hover{
-  background: url('http://localhost:3000/image/glitter.png');
+button:hover {
+  background: url("http://localhost:3000/image/glitter.png");
   background-size: 100px;
 }
 
@@ -93,31 +82,31 @@ button:hover{
 .About {
   text-align: center;
   font-size: 30px;
- }
+}
 
-.About_image{
-  margin:40px;
-  margin-top:70px;
+.About_image {
+  margin: 40px;
+  margin-top: 70px;
 }
 .About_text {
   font-size: 25px;
-  margin:20px;
-  margin-left:30px;
-  margin-right:100px;
-  margin-top:30px;
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 100px;
+  margin-top: 30px;
 }
 
-.About_Title{
+.About_Title {
   font-size: 90px;
-  margin-top:70px;
-  margin-bottom:10px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   text-align: center;
 }
-.background_About{
-  padding-top:40px;
-  padding-bottom:100px;
-  background-color:#8daade;
-  margin:80px;
+.background_About {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: #8daade;
+  margin: 80px;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -136,11 +125,11 @@ button:hover{
 
 .about_row {
   display: flex;
-  background-color:#8daade;
-  position:relative;
+  background-color: #8daade;
+  position: relative;
   align-content: center;
-  
-  padding-bottom:100px;
+
+  padding-bottom: 100px;
 }
 
 .about_column {
@@ -152,54 +141,45 @@ button:hover{
   font-size: 30px;
 }
 
-
 .title {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-
-.title{
- padding-top: 40px;
- padding-bottom: 40px;
- font-size:70px;
-
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 70px;
 }
 
 .myDIV {
-  height:300px;
+  height: 300px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   padding: 10px;
 }
 
-.image{
-  width:300px;
+.image {
+  width: 300px;
 }
-
-
 
 .App-link {
   color: #61dafb;
 }
 
-.header{
+.header {
   position: sticky;
 }
 
 /*********Gallery******/
 
-
-
-.imagegallery{
-  padding-left:20%;
-  padding-right:20%;
-  padding-top:5%;
+.imagegallery {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
 }
-
-
 
 /*********************************
 **********Event Packages
@@ -209,13 +189,13 @@ button:hover{
 }
 
 .packages-header {
-  background-color:#8daade;
+  background-color: #8daade;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin:100px;
+  margin: 100px;
 }
 
 .package-list {

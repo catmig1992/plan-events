@@ -7,12 +7,12 @@ const images = [
   { url: "image/party_people2.jpeg" },
   { url: "image/newyear_celebration.jpeg" },
   { url: "image/kid_birthday.jpeg" },
-  { url: "image/birthday.jpeg" }
+  { url: "image/birthday.jpeg" },
 ];
 
 const Gallery = () => {
   return (
-    <div Class="imagegallery">
+    <div className="imagegallery">
       <SimpleImageSlider
         width={1000}
         height={600}
@@ -22,6 +22,6 @@ const Gallery = () => {
       />
     </div>
   );
-}
+};
 
 export default Gallery;

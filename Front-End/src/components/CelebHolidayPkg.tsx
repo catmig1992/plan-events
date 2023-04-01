@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-export default function CelebrationReunionPkg() {
+export default function CelebrationHolidayPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Family Reunion Celebration Package</h1>
+            <h1>Holiday Celebration Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -23,16 +23,16 @@ export default function CelebrationReunionPkg() {
               <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Kebabs,
-              Meatballs and Spring Rolls
+              <span className="PresetCategory">Appetizers:</span> Egg Rolls,
+              Fruit Skewers and Meatballs
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span> Filet Mignon,
-              Grilled Chicken and Grilled Fish
+              <span className="PresetCategory">Entrées:</span> Filet Mignon and
+              Grilled Fish
             </p>
             <p>
               <span className="PresetCategory">Desserts:</span> Macarons, Red
-              Velvet Cake and Fruit Tarts
+              Velvet Cake and Cream Puffs
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
@@ -47,7 +47,7 @@ export default function CelebrationReunionPkg() {
               hours
             </p>
             <p>
-              <span className="PresetCategory">Tables and chairs:</span> modern
+              <span className="PresetCategory">Tables and chairs:</span> classic
               style - round tables
             </p>
             <p>
@@ -61,10 +61,16 @@ export default function CelebrationReunionPkg() {
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
+              </Button>{" "}
+              <Button
+                className="NextButton"
+                variant="secondary"
+                href="/reunion"
+              >
+                Next
               </Button>
             </div>
             <br />
@@ -72,7 +78,6 @@ export default function CelebrationReunionPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select

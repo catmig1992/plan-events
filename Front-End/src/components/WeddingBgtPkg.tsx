@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-export default function CelebrationAnniversaryPkg() {
+function WeddingBudgetPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Anniversary Celebration Package</h1>
+            <h1>Wedding Budget Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -20,61 +20,47 @@ export default function CelebrationAnniversaryPkg() {
           </header>
           <main className="PresetMain">
             <p>
-              <span className="PresetCategory">Meal Service:</span> Sit-Down
+              <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Bacon Wrapped
-              Shrimp, Bruschetta Toast and Kebabs
+              <span className="PresetCategory">Appetizers:</span> Egg Rolls,
+              Kebabs and Meatballs
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span> Filet Mignon,
-              Grilled Chicken and Grilled Fish
+              <span className="PresetCategory">Entrées:</span> Filet Mignon and
+              Grilled Chicken
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span> Red Velvet Cake,
-              Vanilla Cake and Fruit Tarts
+              <span className="PresetCategory">Desserts:</span> Chocolate Cake
+              and Cream Puffs
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
-              Orange Juice, Ginger Ale, Sprite and Coke
+              Apple Juice, Orange Juice, Sprite and Coke
             </p>
             <p>
-              <span className="PresetCategory">Cash bar duration:</span> 1.5
-              hours
-            </p>
-            <p>
-              <span className="PresetCategory">Open bar duration:</span> 2.5
-              hours
+              <span className="PresetCategory">Cash bar duration:</span> 3 hours
             </p>
             <p>
               <span className="PresetCategory">Tables and chairs:</span> modern
               style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span> Red,
-              Pink, and White Roses
+              <span className="PresetCategory">Flower Arrangements:</span> Pink
+              and White Chrysanthemums with Marigolds
             </p>
             <p>
-              <span className="PresetCategory">Music:</span> Solo Artist
-            </p>
-            <p>
-              <span className="PresetCategory">Entertainment:</span> Photo Booth
+              <span className="PresetCategory">Music:</span> DJ
             </p>
             <div>
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
               </Button>{" "}
-              <Button
-                className="NextButton"
-                variant="secondary"
-                action
-                href="/graduation"
-              >
+              <Button className="NextButton" variant="secondary" href="/glam">
                 Next
               </Button>
             </div>
@@ -83,15 +69,19 @@ export default function CelebrationAnniversaryPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select
               </Button>
             </div>
           </main>
+          <footer>
+            <p>Plan with us!</p>
+          </footer>
         </div>
       </div>
     </Container>
   );
 }
+
+export default WeddingBudgetPkg;

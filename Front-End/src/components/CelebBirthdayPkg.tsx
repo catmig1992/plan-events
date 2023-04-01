@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-export default function CorporateHolidayPkg() {
+export default function CelebrationBirthdayPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Corporate Holiday Package</h1>
+            <h1>Birthday Celebration Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -20,29 +20,31 @@ export default function CorporateHolidayPkg() {
           </header>
           <main className="PresetMain">
             <p>
-              <span className="PresetCategory">Meal Service:</span> Sit-Down
+              <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Bacon Wrapped
-              Shrimp, Kebabs and Spring Rolls
+              <span className="PresetCategory">Appetizers:</span> Egg Rolls,
+              Kebabs and Meatballs
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span> Filet Mignon,
-              Grilled Chicken and Grilled Fish
+              <span className="PresetCategory">Entrées:</span> Filet Mignon and
+              Grilled Fish
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span> Macarons, Red
-              Velvet Cake and Cream Puffs
+              <span className="PresetCategory">Desserts:</span> Chocolate Cake,
+              Vanilla Cake and Fruit Tarts
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
-              Ginger Ale, Sprite and Coke
+              Orange Juice, Ginger Ale, Sprite and Coke
             </p>
             <p>
-              <span className="PresetCategory">Cash bar duration:</span> 2 hours
+              <span className="PresetCategory">Cash bar duration:</span> 1.5
+              hours
             </p>
             <p>
-              <span className="PresetCategory">Open bar duration:</span> 2 hours
+              <span className="PresetCategory">Open bar duration:</span> 2.5
+              hours
             </p>
             <p>
               <span className="PresetCategory">Tables and chairs:</span> classic
@@ -53,7 +55,7 @@ export default function CorporateHolidayPkg() {
               and White Chrysanthemums with Marigolds
             </p>
             <p>
-              <span className="PresetCategory">Music:</span> Solo Artist
+              <span className="PresetCategory">Music:</span> DJ
             </p>
             <p>
               <span className="PresetCategory">Entertainment:</span> Photo Booth
@@ -62,7 +64,6 @@ export default function CorporateHolidayPkg() {
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
@@ -70,8 +71,7 @@ export default function CorporateHolidayPkg() {
               <Button
                 className="NextButton"
                 variant="secondary"
-                action
-                href="/mixer"
+                href="/anniversary"
               >
                 Next
               </Button>
@@ -81,7 +81,6 @@ export default function CorporateHolidayPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select

@@ -5,6 +5,7 @@ import "../App.css";
 import "react-calendar/dist/Calendar.css";
 
 //Pass in {events}
+let event: any;
 
 export default function ShowCustomForm() {
   return (
@@ -44,7 +45,6 @@ export default function ShowCustomForm() {
           <Button
             className="EditButton"
             variant="secondary"
-            action
             href={`/events/${event.id}/edit`}
           >
             Edit Event

@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-export default function CorporateClassicPkg() {
+export default function CelebrationAnniversaryPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Corporate Classic Package</h1>
+            <h1>Anniversary Celebration Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -23,20 +23,20 @@ export default function CorporateClassicPkg() {
               <span className="PresetCategory">Meal Service:</span> Sit-Down
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Bruschetta
-              Toast, Kebabs and Spring Rolls
+              <span className="PresetCategory">Appetizers:</span> Bacon Wrapped
+              Shrimp, Bruschetta Toast and Kebabs
             </p>
             <p>
-              <span className="PresetCategory">Entrées:</span> Filet Mignon and
-              Grilled Fish
+              <span className="PresetCategory">Entrées:</span> Filet Mignon,
+              Grilled Chicken and Grilled Fish
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span> Chocolate Cake
-              and Cream Puffs
+              <span className="PresetCategory">Desserts:</span> Red Velvet Cake,
+              Vanilla Cake and Fruit Tarts
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
-              Ginger Ale, Sprite and Coke
+              Orange Juice, Ginger Ale, Sprite and Coke
             </p>
             <p>
               <span className="PresetCategory">Cash bar duration:</span> 1.5
@@ -51,17 +51,19 @@ export default function CorporateClassicPkg() {
               style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span> Pink,
-              Yellow and White Roses
+              <span className="PresetCategory">Flower Arrangements:</span> Red,
+              Pink, and White Roses
             </p>
             <p>
               <span className="PresetCategory">Music:</span> Solo Artist
+            </p>
+            <p>
+              <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
             <div>
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
@@ -69,8 +71,7 @@ export default function CorporateClassicPkg() {
               <Button
                 className="NextButton"
                 variant="secondary"
-                action
-                href="/corp-holiday"
+                href="/graduation"
               >
                 Next
               </Button>
@@ -80,7 +81,6 @@ export default function CorporateClassicPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select

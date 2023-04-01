@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import "../App.css";
 
-export default function CorporateMixerPkg() {
+export default function CelebrationGraduationPkg() {
   return (
     <Container>
       <div className="PresetPkgs">
         <div className="PresetContent">
           <header className="PresetHeader">
-            <h1>Corporate Mixer Package</h1>
+            <h1>Graduation Celebration Package</h1>
             <div className="PresetInfo">
               <p>
                 Event hall will be selected based on availability per event
@@ -23,46 +23,52 @@ export default function CorporateMixerPkg() {
               <span className="PresetCategory">Meal Service:</span> Buffet
             </p>
             <p>
-              <span className="PresetCategory">Appetizers:</span> Bacon Wrapped
-              Shrimp, Kebabs and Spring Rolls
+              <span className="PresetCategory">Appetizers:</span> Egg Rolls,
+              Kebabs and Meatballs
             </p>
             <p>
               <span className="PresetCategory">Entrées:</span> Filet Mignon and
-              Grilled Fish
+              Grilled Chicken
             </p>
             <p>
-              <span className="PresetCategory">Desserts:</span> Chocolate Cake
-              and Fruit Tarts
+              <span className="PresetCategory">Desserts:</span> Fruit Tarts,
+              Chocolate Cake and Cream Puffs
             </p>
             <p>
               <span className="PresetCategory">Non-Alcoholic Beverages:</span>
-              Ginger Ale, Sprite and Coke
+              Orange Juice, Sprite and Coke
             </p>
             <p>
               <span className="PresetCategory">Cash bar duration:</span> 2 hours
             </p>
             <p>
-              <span className="PresetCategory">Open bar duration:</span> 2 hours
-            </p>
-            <p>
-              <span className="PresetCategory">Tables and chairs:</span> classic
+              <span className="PresetCategory">Tables and chairs:</span> modern
               style - round tables
             </p>
             <p>
-              <span className="PresetCategory">Flower Arrangements:</span> Pink
-              and White Chrysanthemums with Marigolds
+              <span className="PresetCategory">Flower Arrangements:</span> Pink,
+              Yellow and White Roses
             </p>
             <p>
-              <span className="PresetCategory">Music:</span> Live Band
+              <span className="PresetCategory">Music:</span> DJ
+            </p>
+            <p>
+              <span className="PresetCategory">Entertainment:</span> Photo Booth
             </p>
             <div>
               <Button
                 className="BackButton"
                 variant="secondary"
-                action
                 href="/eventPackages"
               >
                 Back
+              </Button>{" "}
+              <Button
+                className="NextButton"
+                variant="secondary"
+                href="/holiday"
+              >
+                Next
               </Button>
             </div>
             <br />
@@ -70,7 +76,6 @@ export default function CorporateMixerPkg() {
               <Button
                 className="SelectButton"
                 variant="success"
-                action
                 href="/packageForm"
               >
                 Select
