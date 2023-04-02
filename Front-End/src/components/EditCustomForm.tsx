@@ -7,8 +7,39 @@ import Row from "react-bootstrap/Row";
 import "../App.css";
 import "react-calendar/dist/Calendar.css";
 
+interface Event {
+  id: number;
+  eventDescription: string;
+  partySize: string;
+  startTime: string;
+  endTime: string;
+  eventDate: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: number;
+  eventHall: string;
+  mealService: string;
+  foodRestrictions: string;
+  baconWrappedShrimp: string;
+  bruschettaToast: string;
+  appetizerOptions: string;
+  entreeOptions: string;
+  dessertOptions: string;
+  nonalcoholicBeverage: string;
+  barService: string;
+  cashBarStartTime: string;
+  cashBarEndTime: string;
+  openBarStartTime: string;
+  openBarEndTime: string;
+  furnitureStyle: string;
+  tableStyle: string;
+  musicOptions: string;
+  entertainmentOptions: string;
+}
+
 //Pass in {events}
-let event: any;
+let event: Event;
 
 export default function EditCustomForm() {
   const [date, setDate] = useState(new Date());
